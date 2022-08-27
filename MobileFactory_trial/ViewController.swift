@@ -91,7 +91,7 @@ extension ViewController: UITextFieldDelegate {
     @objc func datePickerValueChanged(sender:UIDatePicker) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat  = "HH"
-        dateFormatter.locale = Locale(identifier: "jp_JP")
+        dateFormatter.locale = Locale(identifier: "ja_JP")
         
         if selectedTimeTextField.isFirstResponder {
             selectedTimeTextField.text = dateFormatter.string(from: sender.date)
